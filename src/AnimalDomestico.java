@@ -4,7 +4,9 @@ public class AnimalDomestico extends Animal{
 	String raca;
 	boolean pedigree;
 	
-	AnimalDomestico(String nome,String raca,boolean pedigree) {
+	AnimalDomestico(String especie, int idade, String familia,
+			String nome,String raca,boolean pedigree) {
+		super(especie,idade,familia);
 		this.nome = nome;
 		this.raca = raca;
 		this.pedigree = pedigree;

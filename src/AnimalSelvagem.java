@@ -4,8 +4,10 @@ public class AnimalSelvagem extends Animal {
 	boolean ameacado;
 	String cadeiaAlimentar;
 	
-	AnimalSelvagem(String hierarquiaBando,boolean ameacado,
+	AnimalSelvagem(String especie,int idade,String familia,
+			String hierarquiaBando,boolean ameacado,
 			String cadeiaAlimentar) {
+		super(especie,idade,familia);
 		this.hierarquiaBando = hierarquiaBando;
 		this.ameacado = ameacado;
 		this.cadeiaAlimentar = cadeiaAlimentar;
