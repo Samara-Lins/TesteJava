@@ -35,6 +35,31 @@ public class AnimalDomestico extends Animal{
 	public void setPedigree(boolean pedigree) {
 		this.pedigree = pedigree;
 	}
+	
+	@Override
+	public void fazerSom(Animal animal) {
+		switch (animal.getEspecie()) {
+		case "cachorro":
+			System.out.println("*latido");
+			break;
+		case "gato":
+			System.out.println("*miado");
+			break;
+		case "papagaio":
+			System.out.println("Louro quer biscoito");
+			break;
+		case "porco":
+			System.out.println("*guincho");
+			break;
+		case "vaca":
+			System.out.println("*mugido");
+			break;
+		default:
+			System.out.println("Não conheço esse animal");
+			break;
+		}
+		
+	}
 }
 
 	

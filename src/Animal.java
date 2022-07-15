@@ -34,4 +34,7 @@ public class Animal {
 		this.familia = familia;
 	}
 	
+	public void fazerSom(Animal animal) {
+		System.out.println("*Som de animal");
+	}
 }

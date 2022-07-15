@@ -37,4 +37,30 @@ public class AnimalSelvagem extends Animal {
 		this.cadeiaAlimentar = cadeiaAlimentar;
 	}
 	
+	@Override
+	public void fazerSom(Animal animal) {
+		switch (animal.getEspecie()) {
+		case "leão":
+			System.out.println("*rugido");
+			break;
+		case "tigre":
+			System.out.println("*rugido");
+			break;
+		case "cobra":
+			System.out.println("*sibilo");
+			break;
+		case "urso":
+			System.out.println("*rosnado");
+			break;
+		case "águia":
+			System.out.println("*pio");
+			break;
+		case "lobo":
+			System.out.println("*uivo");
+			break;
+		default:
+			System.out.println("Não conheço esse animal");
+			break;
+		}
+	}
 }
